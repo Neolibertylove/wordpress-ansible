@@ -1,5 +1,16 @@
 # Wordpress Ansible project for IT Security
 
+### When cloning please use this command
+This command will update all submodules automatically.
+* `git clone --recursive URL`
+* For example: `git clone --recursive https://github.com/Nicl0996/wordpress-ansible.git`
+
+### If you didnt clone with --recursive, follow this:
+* git clone URL
+* cd /repository/
+* git submodule init
+* git submodule update
+
 ###
 Vagrant versions tested
 * Vagrant 1.8.1
@@ -51,44 +62,17 @@ Follow the instruction in the link below.
     php
     mysql
     wordpress
+    generic-debian
+
+### Generic Debian role
+    This is a submodule containing an Ansible role that ensures all unattended updates are updated. 
+    To add a submodule to a repository: 
+   `git submodule add https://github.com/moozer/ansible-generic-debian.git generic-debian`
 
 ### Pull Requests:
 
 Before making a pull request follow the instructions in the link below.
 
 [AboutPullRequest](AboutPullRequests.md)
-
-### Todo:
-1. consolidation/basic functionality
-
-    1. vagrant up workning with KVM and virtualbox - done
-    
-    2. write a basic README.md file with short description - done
-
-    3. restructure to follow ansible best practice dir structure
-
-    4. make script or describe how to perform integration tests
-
-    5. describe PR requirements in reade file
-
-    6. make vagrant up on windows work with ansible
-
-    7. make ansible install mysql
-
-    8. make ansible install wordpress
-
-4. Development
-
-    1. check_mk (not security for now)
-
-    2. set up log server and send all logs to that server (CSC6)
-
-    3. set up backup and restore for mysql (CSC10)
-
-    4. set up backup and restore for wordpress (CSC10)
-
-    5. authorized software (CSC2)
-
-    6. secure config (CSC3) 
 
 	
